@@ -1,0 +1,5 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler">
+  <!-- Reuse the portlet page by default for maximized portlet view -->
+  <st:include page="portlet.jelly"/>
+</j:jelly>

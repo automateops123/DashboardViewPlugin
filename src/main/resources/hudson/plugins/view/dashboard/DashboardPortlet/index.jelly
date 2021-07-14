@@ -1,0 +1,12 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout">
+  <j:set var="items" value="${it.dashboard.items}"/>
+  <j:set var="jobs" value="${it.dashboard.jobs}"/>
+  <l:layout title="${it.dashboard.displayName} - ${it.displayName}">
+    <link href="${rootURL}/plugin/dashboard-view/css/full_screen.css" type="text/css"
+      rel="stylesheet"/>
+    <l:main-panel>
+      <st:include page="main.jelly" optional="true"/>
+    </l:main-panel>
+  </l:layout>
+</j:jelly>

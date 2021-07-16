@@ -7,7 +7,13 @@
     <artifactId>plugin</artifactId>
     <version>4.18</version>
     <relativePath />
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.4.2.RELEASE</version>
   </parent>
+  <properties>
+    <java.version>1.8</java.version>
+  </properties>
 
   <artifactId>dashboard-view</artifactId>
   <version>${revision}${changelist}</version>
@@ -158,25 +164,11 @@
           <version>2.9.1</version>
         </plugin>
         <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-shade-plugin</artifactId>
-          <version>2.0</version>
-          <executions>
-            <execution>
-              <phase>package</phase>
-              <goals>
-                <goal>shade</goal>
-              </goals>
-              <configuration>
-                <transformers>
-                  <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                    <mainClass>org.lazydevs.veetle.api.VeetleAPI</mainClass>
-                  </transformer>
-                </transformers>
-              </configuration>
-          </execution>
-        </executions>
-      </plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+        <plugin>
+          
 		
       </plugins>
     </pluginManagement>

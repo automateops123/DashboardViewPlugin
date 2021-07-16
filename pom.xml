@@ -210,4 +210,21 @@
 	
   </build>
   
+  <distributionManagement>
+	 
+  <repository>
+    <name>central</name>
+    <id>DashBoardView-libs-release-local</id>
+    <url>http://54.179.23.203:8082/artifactory/DashBoardView-libs-release-local/</url>
+  </repository>
+  
+  
+  <snapshotRepository>
+    <id>central</id>
+    <name>DashBoardView-libs-snapshot-local</name>
+    <url>http://54.179.23.203:8082/artifactory/DashBoardView-libs-snapshot-local/</url>
+  </snapshotRepository>
+
+</distributionManagement>
+  
 </project>

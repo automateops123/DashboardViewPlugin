@@ -3,13 +3,12 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>1.4.2.RELEASE</version>
+    <groupId>org.jenkins-ci.plugins</groupId>
+    <artifactId>plugin</artifactId>
+    <version>4.18</version>
     <relativePath />
   </parent>
-  
+
   <artifactId>dashboard-view</artifactId>
   <version>${revision}${changelist}</version>
   <packaging>hpi</packaging>
@@ -158,16 +157,9 @@
           <artifactId>fmt-maven-plugin</artifactId>
           <version>2.9.1</version>
         </plugin>
-        <plugin>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
-        </plugin>
-        
-          
 		
       </plugins>
     </pluginManagement>
-        
     
 	<plugins>
 	

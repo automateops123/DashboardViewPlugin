@@ -11,7 +11,7 @@
 
   <artifactId>dashboard-view</artifactId>
   <version>${revision}${changelist}</version>
-  <packaging>jar</packaging>
+  <packaging>hpi</packaging>
 
   <name>Dashboard View</name>
   <description>Jenkins view that shows various cuts of build information via configured portlets.</description>

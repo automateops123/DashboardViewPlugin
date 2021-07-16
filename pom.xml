@@ -9,10 +9,7 @@
     <version>1.4.2.RELEASE</version>
     <relativePath />
   </parent>
-  <properties>
-    <java.version>1.8</java.version>
-  </properties>
-
+  
   <artifactId>dashboard-view</artifactId>
   <version>${revision}${changelist}</version>
   <packaging>hpi</packaging>
